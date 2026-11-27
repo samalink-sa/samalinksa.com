@@ -301,6 +301,20 @@ section { scroll-margin-top: 76px; position: relative; }
 .form-msg { font-size: 14px; color: var(--body-light); margin-top: 14px; min-height: 1.5em; }
 .form-msg a { color: var(--deep); font-weight: 600; text-decoration: underline; }
 
+/* direct contact card (deep purple bg → white text) */
+.person { margin-top: 40px; position: relative; overflow: hidden; background: linear-gradient(150deg, var(--deep) 0%, #5A1886 100%); color: #fff; border-radius: 26px; padding: 32px 32px 30px; box-shadow: 0 30px 60px -34px rgba(73, 19, 117, 0.9); }
+.person::after { content: ""; position: absolute; right: -70px; top: -70px; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, rgba(201, 87, 249, 0.45), transparent 70%); pointer-events: none; }
+.person-tag { font-size: 12px; font-weight: 700; letter-spacing: 2.6px; text-transform: uppercase; color: #E3B5FD; }
+.person-name { font-size: 28px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.15; margin-top: 12px; color: #fff; }
+.person-title { font-size: 16px; font-weight: 600; color: #F1E6FB; margin-top: 6px; }
+.person-org { font-size: 14px; color: #D3C0E6; margin-top: 2px; }
+.person-lines { display: grid; gap: 10px; margin-top: 22px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.2); }
+.person-lines a { display: inline-flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 500; color: #fff; width: fit-content; }
+.person-lines a:hover span { text-decoration: underline; }
+.person-lines svg { width: 18px; height: 18px; color: #E3B5FD; flex-shrink: 0; }
+.person-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; position: relative; z-index: 1; }
+.person-actions .btn { padding: 11px 18px; font-size: 14.5px; }
+
 /* ---------- footer (deep purple → all-white logo) ---------- */
 .footer { background: var(--deep); color: #E6D8F3; padding: 64px 0 34px; }
 .footer-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; align-items: center; }
